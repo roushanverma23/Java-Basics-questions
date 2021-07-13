@@ -1,4 +1,3 @@
-import java.util.*;
 import java.util.regex.Pattern;
 
 class Employee {
@@ -59,8 +58,23 @@ class Employee {
     }
 }
 
-
-public class Q28 {
+/**
+ * 27.Write a class called Employee, which requires the following:
+ * a) a variable to store the employee ID
+ *          a. employee ID should be of format EMPM1234, EMPS1234, EMPA1234,
+ *              EMPC1234, where M=manager, S=supervisor, A=analyst, C=clerk; number can
+ *              be any no. but first three characters should be EMP
+ * b) a variable to store the employee name
+ * c) a variable to store department
+ * d) a variable to store city
+ * e) a variable to store basic salary
+ * f) a method to calculate the salary of employee
+ * a. if the city is metro then the HRA would be 30% else 20%
+ * b. if the employee ID contain M then DA would be 120%, if S then DA would be
+ *      110%, if A then DA would be 100%, and if C then DA would be 90%
+ * g) constructor methods, which initialize the variables
+ */
+public class Question28 {
     public static void main(String[] args) {
         var emp = new Employee("EMPM1234", "Nilay", "X", "metro", 2000);
         emp.calculateSalary();
